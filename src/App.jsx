@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Hero from "./components/Hero/Hero";
+import Profile from "./components/Profile/Profile";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Price from "./components/Price/Price";
+import Contact from "./components/Contact/Contact";
+
+import Sidebar from "./components/Navigation/Sidebar";
+import MobileNav from "./components/Navigation/MobileNav";
+
+import { colors } from "./styles/classNames";
+import "./styles/scroll.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className={`${colors.bg} flex`}>
+      {/* PCサイドバー */}
+      <Sidebar />
+
+      {/* メイン */}
+      <div className="flex-1 md:ml-64">
+        {/* スマホナビ */}
+        <MobileNav />
+
+        <div className="snap-container">
+          <section id="hero" className="snap-section"><Hero /></section>
+          <section id="profile" className="snap-section"><Profile /></section>
+          <section id="portfolio" className="snap-section"><Portfolio /></section>
+          <section id="price" className="snap-section"><Price /></section>
+          <section id="contact" className="snap-section"><Contact /></section>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
