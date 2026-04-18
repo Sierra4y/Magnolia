@@ -16,3 +16,7 @@ export const card = {
 export const colors = {
   bg: "bg-[#f5f5dc]",
 };
+
+export const animation = {
+  fadeIn: "opacity-0 animate-fadeIn",
+};

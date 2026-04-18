@@ -11,6 +11,7 @@ import { colors } from "./styles/classNames";
 import "./styles/scroll.css";
 
 function App() {
+
   return (
     <div className={`${colors.bg} flex`}>
       {/* PCサイドバー */}
