@@ -5,25 +5,26 @@ const VideoCard = ({ youtubeId }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const iframeRef = useRef(null);
+  const isHoverable = window.matchMedia("(hover: hover)").matches;
 
   const thumbnail = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
 
   // PC hover再生
   const handleMouseEnter = () => {
-    if (window.innerWidth >= 768) {
+    if (isHoverable) {
       setIsPlaying(true);
     }
   };
 
   const handleMouseLeave = () => {
-    if (window.innerWidth >= 768) {
+    if (isHoverable) {
       setIsPlaying(false);
     }
   };
 
   // スマホタップ再生
   const handleClick = () => {
-    if (window.innerWidth < 768) {
+    if (!isHoverable) {
       setIsPlaying(true);
     }
   };
@@ -39,7 +40,7 @@ const VideoCard = ({ youtubeId }) => {
         <img
           src={thumbnail}
           alt="thumbnail"
-          className="w-full h-full object-cover"
+          className="w-full aspect-video object-cover"
         />
       ) : (
         <iframe

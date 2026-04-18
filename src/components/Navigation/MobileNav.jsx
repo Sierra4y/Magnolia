@@ -6,7 +6,7 @@ const MobileNav = () => {
   return (
     <div className="md:hidden fixed top-0 left-0 w-full bg-white shadow z-50">
       <div className="flex justify-between items-center p-4">
-        <h1 className="font-bold">Portfolio</h1>
+        <h1 className="font-bold">Magnolia</h1>
 
         <button onClick={() => setOpen(!open)}>
           ☰

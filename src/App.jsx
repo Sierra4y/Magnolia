@@ -11,8 +11,7 @@ import { colors } from "./styles/classNames";
 import "./styles/scroll.css";
 
 function App() {
-
-  return (
+    return (
     <div className={`${colors.bg} flex`}>
       {/* PCサイドバー */}
       <Sidebar />
@@ -21,13 +20,24 @@ function App() {
       <div className="flex-1 md:ml-64">
         {/* スマホナビ */}
         <MobileNav />
-
-        <div className="snap-container">
-          <section id="hero" className="snap-section"><Hero /></section>
-          <section id="profile" className="snap-section"><Profile /></section>
-          <section id="portfolio" className="snap-section"><Portfolio /></section>
-          <section id="price" className="snap-section"><Price /></section>
-          <section id="contact" className="snap-section"><Contact /></section>
+        
+        {/* コンテンツ */}
+        <div className="snap-container pt-16 md:pt-0">
+          <section id="hero" className="snap-section">
+            <Hero />
+          </section>
+          <section id="profile" className="snap-section">
+            <Profile />
+          </section>
+          <section id="portfolio" className="snap-section">
+            <Portfolio />
+          </section>
+          <section id="price" className="snap-section">
+            <Price />
+          </section>
+          <section id="contact" className="snap-section">
+            <Contact />
+          </section>
         </div>
       </div>
     </div>
