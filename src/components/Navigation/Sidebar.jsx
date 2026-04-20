@@ -6,9 +6,10 @@ const Sidebar = () => {
       <nav className="flex flex-col gap-4">
         <a href="#hero">Top</a>
         <a href="#profile">Profile</a>
+        <a href="#about">About</a>
         <a href="#portfolio">Works</a>
         <a href="#price">Price</a>
-        <a href="#contact">Contact</a>
+        <a href="#form">Form</a>
       </nav>
     </div>
   );

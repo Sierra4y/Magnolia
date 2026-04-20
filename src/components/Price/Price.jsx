@@ -1,51 +1,69 @@
-import { layout, text, card } from "../../styles/classNames";
+import { layout, text } from "../../styles/classNames";
 
-const plans = [
+const priceData = [
   {
-    title: "Basic",
-    price: "¥3,000",
-    description: "簡単なMIX",
-    features: ["ピッチ補正なし", "簡易マスタリング"],
+    title: "ショート",
+    price: "¥1500〜",
+    delivery: "数日〜1週間",
   },
   {
-    title: "Standard",
-    price: "¥5,000",
-    description: "一般的な歌ってみたMIX",
-    features: ["ピッチ補正", "タイミング補正", "マスタリング"],
+    title: "ワンコーラス",
+    price: "¥3000〜",
+    delivery: "約2週間",
   },
   {
-    title: "Premium",
-    price: "¥8,000",
-    description: "高品質仕上げ",
-    features: ["フル補正", "ハモリ作成", "細かい調整"],
+    title: "フルコーラス",
+    price: "¥5000〜",
+    delivery: "約2週間",
+  },
+  {
+    title: "コラボ",
+    price: "基本料金＋1人追加ごとに\n基本料金の半額",
+    delivery: "内容により変動",
   },
 ];
 
 const Price = () => {
   return (
-    <div id="price" className={layout.section}>
+    <div className={`${layout.section} flex items-center`}>
       <div className={layout.container}>
-        <h2 className={text.title}>Price</h2>
+        <h2 className={`${text.title} text-center mb-10`}>
+          Price
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {plans.map((plan, index) => (
-            <div key={index} className={`${card.base} text-center`}>
-              <h3 className="text-xl font-bold mb-2">{plan.title}</h3>
-
-              <p className="text-2xl font-bold mb-4">{plan.price}</p>
-
-              <p className="text-gray-600 mb-4">
-                {plan.description}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+          {priceData.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl p-6 shadow-md text-center"
+            >
+              {/* タイトル */}
+              <p className="text-lg font-semibold text-gray-800 mb-2">
+                {item.title}
               </p>
 
-              <ul className="text-sm text-gray-700 space-y-1">
-                {plan.features.map((feature, i) => (
-                  <li key={i}>・{feature}</li>
-                ))}
-              </ul>
+              {/* 区切り線 */}
+              <div className="w-full px-4 mb-3">
+                <div className="h-[2px] bg-gray-200 w-full"></div>
+              </div>
+
+              {/* 料金 */}
+              <p className="whitespace-pre-line text-xl font-bold text-gray-900 mb-2">
+                {item.price}
+              </p>
+
+              {/* 納期 */}
+              <p className="text-sm text-gray-500">
+                納期：{item.delivery}
+              </p>
             </div>
           ))}
         </div>
+
+        {/* 補足 */}
+        <p className="text-center text-sm text-gray-500 mt-8">
+          ※内容により料金・納期は変動します。お気軽にご相談ください。
+        </p>
       </div>
     </div>
   );

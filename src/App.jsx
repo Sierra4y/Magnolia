@@ -2,7 +2,8 @@ import Hero from "./components/Hero/Hero";
 import Profile from "./components/Profile/Profile";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Price from "./components/Price/Price";
-import Contact from "./components/Contact/Contact";
+import Form from "./components/Form/Form";
+import About from "./components/About/About";
 
 import Sidebar from "./components/Navigation/Sidebar";
 import MobileNav from "./components/Navigation/MobileNav";
@@ -29,14 +30,17 @@ function App() {
           <section id="profile" className="snap-section">
             <Profile />
           </section>
+          <section id="about" className="snap-section">
+            <About />
+          </section>
           <section id="portfolio" className="snap-section">
             <Portfolio />
           </section>
           <section id="price" className="snap-section">
             <Price />
           </section>
-          <section id="contact" className="snap-section">
-            <Contact />
+          <section id="form" className="snap-section">
+            <Form />
           </section>
         </div>
       </div>

@@ -17,9 +17,10 @@ const MobileNav = () => {
         <div className="flex flex-col p-4 gap-4 bg-white">
           <a href="#hero">Top</a>
           <a href="#profile">Profile</a>
+          <a href="#contact">About</a>
           <a href="#portfolio">Works</a>
           <a href="#price">Price</a>
-          <a href="#contact">Contact</a>
+          <a href="#form">Form</a>
         </div>
       )}
     </div>
