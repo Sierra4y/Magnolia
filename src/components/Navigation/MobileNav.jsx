@@ -18,7 +18,8 @@ const MobileNav = () => {
           <a href="#hero">Top</a>
           <a href="#profile">Profile</a>
           <a href="#contact">About</a>
-          <a href="#portfolio">Works</a>
+          <a href="#portfolio">Samples</a>
+          <a href="#workflow">Workflow</a>
           <a href="#price">Price</a>
           <a href="#form">Form</a>
         </div>

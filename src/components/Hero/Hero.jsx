@@ -11,27 +11,36 @@ const Hero = () => {
         <h1
           className={`text-4xl md:text-6xl font-bold mb-6 ${animation.fadeIn}`}
         >
-          歌ってみたを、
-          <br />
-          プロの音へ。
+          あなたの“音”を、<br className="md:hidden" />
+          作品に。
         </h1>
 
-        {/* サブ */}
         <p
           className={`text-lg md:text-xl mb-8 text-gray-600 ${animation.fadeIn}`}
           style={{ animationDelay: "0.3s" }}
         >
-          MIX / Mastering Engineer - える
+          MIX / Mastering Engineer - マグノリア
         </p>
 
-        {/* ボタン */}
-        <a
-          href="#portfolio"
-          className={`inline-block px-6 py-3 bg-black text-white rounded-full transition hover:scale-105 ${animation.fadeIn}`}
-          style={{ animationDelay: "0.6s" }}
-        >
-          実績を見る
-        </a>
+        <div className="flex justify-center gap-4 mt-6">
+          <a
+            href="https://x.com/magnolia_mix"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-full text-sm bg-black text-white hover:opacity-80 transition"
+          >
+            X
+          </a>
+
+          <a
+            href="https://t.co/POC7sZFfbn"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-full text-sm bg-black text-white hover:opacity-80 transition"
+          >
+            YouTube (playlist)
+          </a>
+        </div>
       </div>
     </div>
   );

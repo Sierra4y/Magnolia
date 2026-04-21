@@ -4,6 +4,7 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Price from "./components/Price/Price";
 import Form from "./components/Form/Form";
 import About from "./components/About/About";
+import Workflow from "./components/Workflow/Workflow";
 
 import Sidebar from "./components/Navigation/Sidebar";
 import MobileNav from "./components/Navigation/MobileNav";
@@ -35,6 +36,9 @@ function App() {
           </section>
           <section id="portfolio" className="snap-section">
             <Portfolio />
+          </section>
+          <section id="workflow" className="snap-section">
+            <Workflow />
           </section>
           <section id="price" className="snap-section">
             <Price />
