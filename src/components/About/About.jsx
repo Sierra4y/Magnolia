@@ -7,7 +7,7 @@ const About = () => {
                 <h2 className={`${text.title} text-center mb-10`}>
                     About
                 </h2>
-
+ 
                 <div className="max-w-2xl lg:max-w-4xl mx-auto text-center space-y-4 text-gray-700 leading-relaxed text-base lg:text-lg min-h-[50vh] flex flex-col justify-center">
                     <p className="text-lg lg:text-xl font-medium">
                     音のトータルサポーターとして活動中のマグノリアです。

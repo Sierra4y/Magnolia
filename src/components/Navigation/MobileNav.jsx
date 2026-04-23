@@ -27,5 +27,5 @@ const MobileNav = () => {
     </div>
   );
 };
-
+ 
 export default MobileNav;

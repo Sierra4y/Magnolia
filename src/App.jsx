@@ -30,15 +30,11 @@ function App() {
           z-0
         "
       />
-      {/* PCサイドバー */}
       <Sidebar />
 
-      {/* メイン */}
       <div className="flex-1 md:ml-64 relative z-10">
-        {/* スマホナビ */}
         <MobileNav />
         
-        {/* コンテンツ */}
         <div className="snap-container pt-16 md:pt-0">
           <section id="hero" className="snap-section">
             <Hero />

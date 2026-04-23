@@ -98,7 +98,7 @@ const Arrow = ({ children }) => (
     {children}
   </div>
 );
-
+ 
 const Empty = () => <div />;
 
 export default Workflow;

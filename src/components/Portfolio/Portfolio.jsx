@@ -20,7 +20,7 @@ const Portfolio = () => {
       })
       .catch(err => console.error(err));
   }, []);
-
+ 
   return (
     <div id="portfolio" className={`${layout.section} py-16`}>
       <div className="w-full max-w-5xl mx-auto">

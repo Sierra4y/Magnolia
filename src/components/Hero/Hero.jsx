@@ -13,7 +13,7 @@ const Hero = () => {
           あなたの“音”を、<br className="md:hidden" />
           作品に。
         </h1>
-
+ 
         <p
           className={`text-lg md:text-xl mb-8 text-gray-600 ${animation.fadeIn}`}
           style={{ animationDelay: "0.3s" }}

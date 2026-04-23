@@ -24,7 +24,7 @@ const Profile = () => {
             className="w-48 md:w-64 rounded-2xl shadow-md object-cover"
           />
         </div>
-
+ 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
           {profileData.map((item, index) => (
             <div
@@ -34,17 +34,14 @@ const Profile = () => {
                 ${index < 3 ? "lg:col-span-2" : "lg:col-span-3"}
               `}
             >
-              {/* 項目名 */}
               <p className="text-base font-semibold text-gray-700 mb-2">
                 {item.label}
               </p>
 
-              {/* 区切り線 */}
               <div className="w-full px-4 mb-3">
                 <div className="h-[2px] bg-gray-100 w-full"></div>
               </div>
 
-              {/* 値 */}
               <p className="text-lg font-medium text-gray-900">
                 {item.value}
               </p>

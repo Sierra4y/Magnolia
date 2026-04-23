@@ -47,7 +47,7 @@ export default function Contact() {
         body: formData,
       }
     );
-
+ 
     alert("送信完了！");
   };
 
