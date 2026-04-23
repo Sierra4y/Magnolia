@@ -5,6 +5,7 @@ import Price from "./components/Price/Price";
 import Form from "./components/Form/Form";
 import About from "./components/About/About";
 import Workflow from "./components/Workflow/Workflow";
+import flower from "./assets/flower.png";
 
 import Sidebar from "./components/Navigation/Sidebar";
 import MobileNav from "./components/Navigation/MobileNav";
@@ -14,12 +15,26 @@ import "./styles/scroll.css";
 
 function App() {
     return (
-    <div className={`${colors.bg} flex`}>
+    <div className={`${colors.bg} flex relative overflow-hidden`}>
+      <img
+        src={flower}
+        alt=""
+        className="
+          absolute
+          bottom-0
+          right-0
+          w-80 md:w-[500px]
+          opacity-10
+          rotate-12
+          pointer-events-none
+          z-0
+        "
+      />
       {/* PCサイドバー */}
       <Sidebar />
 
       {/* メイン */}
-      <div className="flex-1 md:ml-64">
+      <div className="flex-1 md:ml-64 relative z-10">
         {/* スマホナビ */}
         <MobileNav />
         

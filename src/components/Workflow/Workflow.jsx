@@ -16,50 +16,39 @@ const Workflow = () => {
     <div className={`${layout.section} flex items-center`}>
       <div className={layout.container}>
         
-        {/* タイトル */}
         <h2 className={`${text.title} text-center mb-10`}>
           Workflow
         </h2>
 
         <div className="max-w-5xl mx-auto">
 
-            {/* ===================== */}
-            {/* モバイル（3列グリッド） */}
-            {/* ===================== */}
             <div className="sm:hidden max-w-md mx-auto">
             <div className="grid grid-cols-[1fr_40px_1fr] gap-0.5">
 
-                {/* 1行目 */}
                 <Card step="STEP 1" text={steps[0]} />
                 <Arrow>→</Arrow>
                 <Card step="STEP 2" text={steps[1]} />
 
-                {/* 2行目 */}
                 <Empty />
                 <Empty />
                 <Arrow>↓</Arrow>
 
-                {/* 3行目 */}
                 <Card step="STEP 4" text={steps[3]} />
                 <Arrow>←</Arrow>
                 <Card step="STEP 3" text={steps[2]} />
 
-                {/* 4行目 */}
                 <Arrow>↓</Arrow>
                 <Empty />
                 <Empty />
 
-                {/* 5行目 */}
                 <Card step="STEP 5" text={steps[4]} />
                 <Arrow>→</Arrow>
                 <Card step="STEP 6" text={steps[5]} />
 
-                {/* 6行目 */}
                 <Empty />
                 <Empty />
                 <Arrow>↓</Arrow>
 
-                {/* 7行目 */}
                 <Card step="STEP 8" text={steps[7]} />
                 <Arrow>←</Arrow>
                 <Card step="STEP 7" text={steps[6]} />
@@ -67,9 +56,6 @@ const Workflow = () => {
             </div>
             </div>
 
-          {/* ===================== */}
-          {/* PC */}
-          {/* ===================== */}
           <div className="hidden sm:flex flex-wrap justify-center items-center gap-4">
             {steps.map((step, index) => (
               <div key={index} className="flex items-center gap-4">
@@ -91,7 +77,6 @@ const Workflow = () => {
 
         </div>
 
-        {/* 👇 これも忘れずに入れられる */}
         <p className="text-center text-sm text-gray-500 mt-10">
           🌸初めての方でも丁寧にサポートいたします🌸
         </p>

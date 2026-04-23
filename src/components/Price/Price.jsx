@@ -37,22 +37,18 @@ const Price = () => {
               key={index}
               className="bg-white rounded-xl p-6 shadow-md text-center"
             >
-              {/* タイトル */}
               <p className="text-lg font-semibold text-gray-800 mb-2">
                 {item.title}
               </p>
 
-              {/* 区切り線 */}
               <div className="w-full px-4 mb-3">
                 <div className="h-[2px] bg-gray-200 w-full"></div>
               </div>
 
-              {/* 料金 */}
               <p className="whitespace-pre-line text-xl font-bold text-gray-900 mb-2">
                 {item.price}
               </p>
 
-              {/* 納期 */}
               <p className="text-sm text-gray-500">
                 納期：{item.delivery}
               </p>
@@ -60,7 +56,6 @@ const Price = () => {
           ))}
         </div>
 
-        {/* 補足 */}
         <p className="text-center text-sm text-gray-500 mt-8">
           ※内容により料金・納期は変動します。お気軽にご相談ください。
         </p>

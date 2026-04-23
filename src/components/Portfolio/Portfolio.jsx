@@ -10,9 +10,9 @@ const Portfolio = () => {
       .then(res => res.text())
       .then(text => {
         const ids = text
-          .split("\n")              // 改行で分割
-          .map(id => id.trim())     // 空白削除
-          .filter(id => id);        // 空除去
+          .split("\n")
+          .map(id => id.trim())
+          .filter(id => id);
 
         console.log("IDs:", ids);
 

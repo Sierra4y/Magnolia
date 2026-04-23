@@ -9,7 +9,6 @@ const VideoCard = ({ youtubeId }) => {
 
   const thumbnail = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
 
-  // PC hover再生
   const handleMouseEnter = () => {
     if (isHoverable) {
       setIsPlaying(true);
@@ -22,7 +21,6 @@ const VideoCard = ({ youtubeId }) => {
     }
   };
 
-  // スマホタップ再生
   const handleClick = () => {
     if (!isHoverable) {
       setIsPlaying(true);
@@ -55,7 +53,6 @@ const VideoCard = ({ youtubeId }) => {
         />
       )}
 
-      {/* スピーカー */}
       {isPlaying && (
         <button
           onClick={(e) => {

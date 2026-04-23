@@ -55,14 +55,13 @@ export default function Contact() {
     <div className={`${layout.section} flex items-center`}>
       <div className={layout.container}>
         <h2 className={`${text.title} text-center mb-10`}>
-          Contact
+          Form
         </h2>
 
         <form
           onSubmit={handleSubmit}
           className="w-full max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-md space-y-5"
         >
-          {/* input共通 */}
           <input
             type="text"
             name="name"

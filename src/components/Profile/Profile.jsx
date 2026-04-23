@@ -1,4 +1,5 @@
 import { layout, text } from "../../styles/classNames";
+import profileImage from "../../assets/magnolia.png";
 
 const profileData = [
   { label: "活動名", value: "マグノリア" },
@@ -15,6 +16,14 @@ const Profile = () => {
         <h2 className={`${text.title} text-center mb-10`}>
           Profile
         </h2>
+
+        <div className="flex justify-center mb-10">
+          <img
+            src={profileImage}
+            alt="マグノリア"
+            className="w-48 md:w-64 rounded-2xl shadow-md object-cover"
+          />
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
           {profileData.map((item, index) => (

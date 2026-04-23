@@ -7,9 +7,8 @@ const Hero = () => {
       className={`${layout.section} flex items-center justify-center h-screen`}
     >
       <div className="text-center">
-        {/* タイトル */}
         <h1
-          className={`text-4xl md:text-6xl font-bold mb-6 ${animation.fadeIn}`}
+          className={`text-3xl md:text-5xl leading-tight font-bold mb-6 ${animation.fadeIn}`}
         >
           あなたの“音”を、<br className="md:hidden" />
           作品に。
@@ -22,12 +21,12 @@ const Hero = () => {
           MIX / Mastering Engineer - マグノリア
         </p>
 
-        <div className="flex justify-center gap-4 mt-6">
+        <div className="flex justify-center gap-5 mt-6">
           <a
             href="https://x.com/magnolia_mix"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-full text-sm bg-black text-white hover:opacity-80 transition"
+            className="px-6 py-3 rounded-full text-sm bg-black text-white hover:opacity-80 transition"
           >
             X
           </a>
@@ -36,7 +35,7 @@ const Hero = () => {
             href="https://t.co/POC7sZFfbn"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-full text-sm bg-black text-white hover:opacity-80 transition"
+            className="px-6 py-3 rounded-full text-sm bg-black text-white hover:opacity-80 transition"
           >
             YouTube (playlist)
           </a>
