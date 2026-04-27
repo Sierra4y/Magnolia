@@ -151,7 +151,6 @@ export default function Contact() {
             name="sample"
             value={form.sample}
             onChange={handleChange}
-            disabled
             className="w-full border border-gray-200 p-3 rounded-lg"
             required
           >
